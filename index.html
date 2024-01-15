@@ -8,32 +8,37 @@
 </head>
 
 <body>
-    <h1>🍽️ 오늘 점심</h1>
+    <header>
+        <h1>🍽️ 오늘 점심</h1>   
+    </header>
     <hr>
-    <blockquote cite="https://place.map.kakao.com/1937086831">
-        <strong>👉 삼선회사랑</strong>
-        <ul>
-            <li>서울 성동구 아차산로 97 남영빌딩 1층</li>
-            <li>월,화,수,일 12:00 ~ 24:00</li>
-            <li>제육두루치기 (10,000원)</li>
-        </ul>
-        <img src="https://img1.kakaocdn.net/cthumb/local/R0x420.q50/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Ffiy_reboot%2Fplace%2F1222023B51C44944803F8E96C6686036" alt="메뉴판" width="60%" height="60%">
-    </blockquote>
+    <section>
+        <div>
+            <strong>👉 삼선회사랑</strong>
+            <ul>
+                <li>서울 성동구 아차산로 97 남영빌딩 1층</li>
+                <li>월,화,수,일 12:00 ~ 24:00</li>
+                <li>제육두루치기 (10,000원)</li>
+            </ul>
+            <img src=".\삼선회사랑.jpg" alt="삼선회사랑 제육두루치기" width="50%" height="50%">
+        </div>
+    </section>
+    <hr>
+    <section>
+        <h3>💬 리뷰</h3>
+        <form action="/comment" method="post">
+            <input type="radio" id="option1" name="option" value="1">
+            <label for="option1">냠냠</label>
+            <input type="radio" id="option2" name="option" value="2">
+            <label for="option2">님님</label>
+            <input type="radio" id="option3" name="option" value="3">
+            <label for="option3">념념</label>
+            <br>
+            <textarea rows="4" cols="50" placeholder="식당에 대한 리뷰를 남겨주세요!"></textarea>
+            <button type="submit">입력</button>
+        </form>
+    </section>    
     
-    <h3>💬 리뷰</h3>
-    <form action="/comment" method="post">
-        <input type="radio" id="option1" name="option" value="1">
-        <label for="option1">냠냠</label>
-        <input type="radio" id="option2" name="option" value="2">
-        <label for="option2">님님</label>
-        <input type="radio" id="option3" name="option" value="3">
-        <label for="option3">념념</label>
-        <br>
-        <textarea rows="4" cols="50" placeholder="식당에 대한 리뷰를 남겨주세요!"></textarea>
-        <button type="submit">입력</button>
-    </form>
-    
-
 </body>
 
 </html>
