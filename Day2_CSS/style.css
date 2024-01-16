@@ -174,7 +174,7 @@ header h1 em {
 
 .aboutMe p {
   color: #333;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 30px */
@@ -196,6 +196,9 @@ header h1 em {
 }
 
 /* --- 기술 스택 --- */
+ol, ul {
+	list-style: none;
+}
 
 .techStackContainer {
   padding: 100px 20px;
@@ -233,7 +236,7 @@ header h1 em {
   grid-column-gap: 80px;
 }
 
-/* footer */
+/* contact me */
 .contactCon {
   position: fixed;
   bottom: 8px;
