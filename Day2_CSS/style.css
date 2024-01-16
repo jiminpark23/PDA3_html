@@ -63,6 +63,26 @@ header h1 {
   letter-spacing: -1.28px;
 }
 
+.name {
+  position: relative;
+  font-weight: bold;
+  color: black;
+}
+.name::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  background: #ff6e7f;
+}
+header h1:hover .name::after {
+  width: 100%;
+  transition: width .3s;
+}
+
 header h1 em {
   background: linear-gradient(
       99deg,
@@ -94,6 +114,7 @@ header h1 em {
   background: white;
   color: black;
 }
+/* 애니메이션 */
 .fade-in-box {
   display: inline-block;
   animation: fadein 3s;
@@ -117,6 +138,7 @@ header h1 em {
       opacity: 1;
   }
 }
+
 .pic {
   width: 355.624px;
   height: 350px;
@@ -172,6 +194,45 @@ header h1 em {
 .posRelative {
   position: relative;
 }
+
+/* --- 기술 스택 --- */
+
+.techStackContainer {
+  padding: 100px 20px;
+}
+
+.techStackContainer p {
+  margin-bottom: 80px;
+}
+
+.techStackContainer h3 {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 65% */
+  letter-spacing: -0.8px;
+  padding-bottom: 24px;
+}
+.techStackContainer p {
+  color: #333;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 130% */
+}
+
+.teckLogos {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-row-gap: 40px;
+  grid-column-gap: 80px;
+}
+
 /* footer */
 .contactCon {
   position: fixed;
