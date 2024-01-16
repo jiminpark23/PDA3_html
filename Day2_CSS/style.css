@@ -66,8 +66,8 @@ header h1 {
 header h1 em {
   background: linear-gradient(
       99deg,
-      #001f8f 3.58%,
-      rgba(36, 255, 203, 0.5) 90.34%
+      #ff6e7f 3.58%,
+      #bfe9ff 90.34%
   );
   background-clip: text;
   -webkit-background-clip: text;
