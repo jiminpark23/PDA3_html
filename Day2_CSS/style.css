@@ -8,6 +8,7 @@
 
 body {
   /* font-family: "Cafe24Supermagic-Bold-v1.0"; */
+  /* transform: scale(0.8); */
 }
 
 nav {
@@ -103,4 +104,49 @@ header h1 em {
   margin-top: 70px;
   margin-left: 200px;
   background: url(https://www.urbanbrush.net/web/wp-content/uploads/edd/2022/12/urbanbrush-20221214144619159434.jpg) lightgray 50% / cover no-repeat;
+}
+
+.aboutMeContainer {
+  background: linear-gradient(
+    96deg,
+    rgba(189, 210, 255, 0.4) 1.72%,
+    rgba(116, 224, 215, 0.4) 158.93%
+  );
+}
+.aboutMe {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 120px 40px;
+}
+.aboutMe h2 {
+  color: #000;
+  font-size: 40px;
+  /* white-space: pre-line; */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 50px */
+  letter-spacing: -0.8px;
+}
+
+.aboutMe p {
+  color: #333;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+  white-space: pre-line;
+}
+
+.flyingPerson {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  /* top: 0px; */
+  bottom: 48px;
+  /* right: 0px; */
+  left: 165px;
+}
+
+.posRelative {
+  position: relative;
 }
