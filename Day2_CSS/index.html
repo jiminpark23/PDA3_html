@@ -2,11 +2,22 @@
 <html lang="ko">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G5019R0JY2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-G5019R0JY2');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="./reset.css"> --> <!--순서 중요-->
     <link rel='stylesheet' href='./style.css'>
+    <link rel="stylesheet" href="./responsive.css" media="(max-width: 390px)">
 </head>
 
 <body>
@@ -23,14 +34,14 @@
     <!-- Header -->
     <header>
         <div>
-            <div class="badge">👋 안녕하세요!</div>
+            <div class="badge">👋 안녕하세요!</div>  <!--TODO: 여러 해시태그 키워드 넘기기 (자동 슬라이드)-->
             <h1>신입 백엔드 개발자.<br />
                 <em class="fade-in-box">Problem Solver.</em><br/>
                 <span class="name">박지민</span>입니다.<br />
             </h1>
             <div class="headerLinkContainer">
-                <a class="headerLink" href="https://www.google.com" target="_blank">Github Link</a>
-                <a class="headerLink white" href="#" target="_blank" background="white" color="white">Resume Link</a>
+                <a class="headerLink" onclick="onClickButton('github')" href="https://www.google.com" target="_blank">Github Link</a>
+                <a class="headerLink white" onclick="onClickButton('resume')" href="#" target="_blank" background="white" color="white">Resume Link</a>
             </div>
             <br /><br /><br /><br /><br /><br />
         </div>
@@ -59,7 +70,7 @@
     <section class="techStackContainer">
         <h3>기술 스택</h3>
         <p className="techStackDescription">
-            지금까지 활용해 본 기술들입니다.
+            지금까지 활용해 본 기술들입니다.<br>
             넓고 깊은 기술 스택을 얻기 위해 노력하고 있습니다.
         </p>
         <div>
@@ -78,9 +89,34 @@
         </div>
     </section>
 
-    <div class="contactCon">
-        <div class="contact"><div>Contact<br>Me</div></div>
+    <div class="fixedContactButton">
+        <div>Contact Me</div>
+        <a href="https://naver.com">(사이트)</a>
+        <a href="tel:02-1234-1234">(핸드폰)</a>
+        <a href="mailto:bssjm17@gmail.com">(이메일)</a>
     </div>
+
+    
+
+    <script>
+        function onClickButton(type) {
+            if (type === 'github') {
+                // gtag("이벤트명", "액션명", {액션에 대한 상세 내용})
+                gtag("event", "깃허브_버튼_클릭", {
+                    'event_category': '깃허브_버튼_클릭',
+                    'event_label': '깃허브_버튼_클릭'
+                })
+                //alert('깃허브로 이동합니다')
+            }
+            else if (type === 'resume') {
+                gtag("event", "이력서_버튼_클릭", {
+                    'event_category': '이력서_버튼_클릭',
+                    'event_label': '이력서_버튼_클릭'
+                })
+                //alert('이력서로 이동합니다')
+            }
+        }
+    </script>
 </body>
 
 </html>

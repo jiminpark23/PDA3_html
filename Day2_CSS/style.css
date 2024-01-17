@@ -237,27 +237,30 @@ ol, ul {
 }
 
 /* contact me */
-.contactCon {
+.fixedContactButton {
   position: fixed;
-  bottom: 8px;
-  right: 8px;
-}
-.contact {
-  width: 165px;
-  height: 88px;
-  display: flex;
-  flex-shrink: 0;
+  right: 60px;
+  bottom: 60px;
+
   border-radius: 50px;
-  border: 10px solid #BBD5F7;
-  background: linear-gradient(98deg, #BED3FF -10.83%, #D2F3E5 51.79%, #FFEBD9 110.76%);
-  color: rgba(64, 57, 48, 0.80);
+  border: 10px solid #bbd5f7;
+  background: linear-gradient(
+    98deg,
+    #bed3ff -10.83%,
+    #d2f3e5 51.79%,
+    #ffebd9 110.76%
+  );
+  width: 165px;
+  padding: 20px 40px;
+  color: rgba(64, 57, 48, 0.8);
+
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding: 20px, 40px;
-  font-family: Pretendard;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.fixedContactButton a {
+  color: black;
 }
