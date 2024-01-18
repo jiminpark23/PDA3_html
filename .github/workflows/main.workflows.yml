@@ -24,4 +24,4 @@ jobs:
         run: aws s3 sync web s3://pda3-portfolio/  # 폴더 이름과 버킷 이름으로 수정
 
       - name: Invalidate cloudfront
-        run: aws cloudfront create-invalidation --distribution-id E3T0WOTRKJLB5F --paths /* # Cloudfront ID로 변경
+        run: aws cloudfront create-invalidation --distribution-id E3T0WOTRKJLB5F --paths "/*" # Cloudfront ID로 변경
