@@ -256,6 +256,7 @@ header h1 {
 .feedbacks {
     gap: 15px;
     justify-content: center;
+    /* flex-direction: column; */
 }
 .feedback {
     width: 290px;
@@ -297,7 +298,7 @@ header h1 {
 .aspiration h1 {
     color: #403930;
     font-family: Pretendard;
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: 125%; /* 50px */
