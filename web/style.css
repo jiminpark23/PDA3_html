@@ -146,7 +146,7 @@ header h1 em {
   border-radius: 500px;
   border: 10px solid #BCF2F9;
   margin-top: 70px;
-  margin-left: 200px;
+  margin-left: 300px;
   background: url(https://www.urbanbrush.net/web/wp-content/uploads/edd/2022/12/urbanbrush-20221214144619159434.jpg) lightgray 50% / cover no-repeat;
 }
 
@@ -331,7 +331,6 @@ ol, ul {
   width: 155px;
   height: 327px;
   flex-shrink: 0;
-  border-radius: 16px;
   border-radius: 16px;
   margin-left: 40px;
   background: url(), lightgray 50% / cover no-repeat;

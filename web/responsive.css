@@ -165,9 +165,9 @@ header h1 {
 .projectContainer {
     padding: 60px 24px;
     display: block;
-  }
-  
-  .projectContainer h1 {
+}
+
+.projectContainer h1 {
     color: #403930;
     font-family: Pretendard;
     font-size: 24px;
@@ -175,16 +175,16 @@ header h1 {
     font-weight: 600;
     line-height: 125%; /* 50px */
     letter-spacing: -0.8px;
-  }
-  
-  .project {
+}
+
+.project {
     height: 400px;
     background-color: #E6EEFF;
     display: flex;
     flex-direction:column-reverse;
     padding: 24px 16px;
     align-items: center;
-    gap: 40px;
+    gap: 0px;
     align-self: stretch;
     margin-top: 32px;
     border-radius: 16px;
@@ -197,9 +197,10 @@ header h1 {
     font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 36px */ 
+    margin-bottom: 0px;
 }
 .projectContent {
-    padding: 24px 16px;
+    padding: 12px 16px;
 }
 .project p {
     color: #403930;
@@ -225,7 +226,7 @@ header h1 {
 }
 .projectImg img {
     width: 85px;
-    height: 190px;
+    height: 185px;
     flex-shrink: 0;
     border-radius: 16px;
     margin: 0px;
@@ -239,7 +240,8 @@ header h1 {
 
 
 .feedbackContainer {
-
+    padding: 40px 0px 80px 0px;
+    gap: 20px;
 }
 
 .feedbackContainer h1 {
@@ -251,8 +253,47 @@ header h1 {
     line-height: 125%; /* 50px */
     letter-spacing: -0.8px;
 }
+.feedbacks {
+    gap: 15px;
+    justify-content: center;
+}
+.feedback {
+    width: 290px;
+    height: 177px;
+    padding: 24px;
+    gap: 20px;
+}
+.feedback p {
+    width: 280px;
+    color: #403930;
+    font-family: "Work Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+}
+.feedback h6 {
+    color: #0F5BA1;
+    text-align: right;
+    font-family: Pretendard;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 208.333% */
+}
 
 
+.aspiration {
+    display: flex;
+    width: 280;
+    height: 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #E6EEFF;
+    padding: 40px 25px;
+}
 .aspiration h1 {
     color: #403930;
     font-family: Pretendard;
@@ -263,4 +304,27 @@ header h1 {
     letter-spacing: -0.8px;
 }
 
+/* 링크와 저작권 순서 바꿔야 함 */
+footer {
+    width: auto;
+    height: 80px;
+    flex-shrink: 0;
+    padding: 40px 0px;
+}
+.footerLink {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 15px;
+}
+footer p {
+    color: var(--Dark, #21243D);
+    text-align: center;
+    font-family: Heebo;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 30px;
+}
 /* box-sizing: border-box; */
