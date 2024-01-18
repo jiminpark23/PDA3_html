@@ -165,9 +165,9 @@ header h1 {
 .projectContainer {
     padding: 60px 24px;
     display: block;
-  }
-  
-  .projectContainer h1 {
+}
+
+.projectContainer h1 {
     color: #403930;
     font-family: Pretendard;
     font-size: 24px;
@@ -175,9 +175,9 @@ header h1 {
     font-weight: 600;
     line-height: 125%; /* 50px */
     letter-spacing: -0.8px;
-  }
-  
-  .project {
+}
+
+.project {
     height: 400px;
     background-color: #E6EEFF;
     display: flex;
@@ -238,5 +238,29 @@ header h1 {
 }
 
 
+.feedbackContainer {
+
+}
+
+.feedbackContainer h1 {
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 50px */
+    letter-spacing: -0.8px;
+}
+
+
+.aspiration h1 {
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 50px */
+    letter-spacing: -0.8px;
+}
 
 /* box-sizing: border-box; */
