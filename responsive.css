@@ -161,10 +161,82 @@ header h1 {
     display: block;
 }
 
-
 /* 프로젝트 */
 .projectContainer {
-    
+    padding: 60px 24px;
+    display: block;
+  }
+  
+  .projectContainer h1 {
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 50px */
+    letter-spacing: -0.8px;
+  }
+  
+  .project {
+    height: 400px;
+    background-color: #E6EEFF;
+    display: flex;
+    flex-direction:column-reverse;
+    padding: 24px 16px;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+    margin-top: 32px;
+    border-radius: 16px;
 }
+
+.project h2 {
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */ 
+}
+.projectContent {
+    padding: 24px 16px;
+}
+.project p {
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+}
+.project a {
+    color: #00446A;
+    font-family: Pretendard;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    text-decoration-line: underline;
+}
+.projectImg {
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+}
+.projectImg img {
+    width: 85px;
+    height: 190px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    margin: 0px;
+    background: url(), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.projectLink {
+    display: flex;
+    gap: 20px;
+}
+
+
 
 /* box-sizing: border-box; */

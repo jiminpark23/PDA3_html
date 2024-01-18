@@ -240,7 +240,7 @@ ol, ul {
 .fixedContactButton {
   position: fixed;
   right: 60px;
-  bottom: 60px;
+  bottom: 40px;
 
   border-radius: 50px;
   border: 10px solid #bbd5f7;
@@ -250,7 +250,7 @@ ol, ul {
     #d2f3e5 51.79%,
     #ffebd9 110.76%
   );
-  width: 165px;
+  width: 120px;
   padding: 20px 40px;
   color: rgba(64, 57, 48, 0.8);
 
