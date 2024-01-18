@@ -254,9 +254,11 @@ header h1 {
     letter-spacing: -0.8px;
 }
 .feedbacks {
+    width: auto;
+    height: auto;
     gap: 15px;
     justify-content: center;
-    /* flex-direction: column; */
+    flex-direction: column;
 }
 .feedback {
     width: 290px;
